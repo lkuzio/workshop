@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Bean;
  * Created by Luke on 2017-01-20.
  */
 @SpringBootApplication
-
 public class Application {
 
     public static String CONTEXT = "/rest";
@@ -25,4 +24,5 @@ public class Application {
             container.setContextPath(CONTEXT);
         });
     }
+
 }
