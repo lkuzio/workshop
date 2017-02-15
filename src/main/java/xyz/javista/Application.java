@@ -27,12 +27,6 @@ public class Application {
         return "Hello World!";
     }
 
-    @Bean
-    public EmbeddedServletContainerCustomizer containerCustomizer(){
-        return (container -> {
-            container.setPort(8092);
-            //container.setContextPath(CONTEXT);
-        });
-    }
+
 
 }
