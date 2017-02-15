@@ -1,5 +1,6 @@
 package xyz.javista.web.controller;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,7 @@ public class ExampleControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
+    @Ignore
     @Test
     public void exampleTest(){
         String response = restTemplate.getForObject(Application.CONTEXT+"/date",String.class);
